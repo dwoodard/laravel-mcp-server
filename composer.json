@@ -12,6 +12,7 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "league/commonmark": "^2.6",
         "maestroerror/laragent": "^0.3.1",
         "opgginc/laravel-mcp-server": "^1.0"
     },

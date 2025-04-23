@@ -12,9 +12,8 @@ Route::get('/debug-agent', function () {
 
     $response = (new OrchestratorAgent('orchestrator-agent'))->respond($message);
 
-    return response()->json([
-        'input' => $message,
-        'response' => $response,
-    ]);
+    $renderedMarkdown = \Illuminate\Support\Facades\Markdown::parse($response)->toHtml();
+
+    return response($renderedMarkdown)->header('Content-Type', 'text/html');
 })
     ->name('debug-agent');
