@@ -104,6 +104,9 @@ return [
     'tools' => [
         \OPGG\LaravelMcpServer\Services\ToolService\Examples\HelloWorldTool::class,
         \OPGG\LaravelMcpServer\Services\ToolService\Examples\VersionCheckTool::class,
+        \App\MCP\Tools\MyCustomTool::class,
+        \App\MCP\Tools\Storage\ReadFileStorageTool::class,
+        \App\MCP\Tools\Storage\ListFileStorageTool::class,
     ],
 
     /*
