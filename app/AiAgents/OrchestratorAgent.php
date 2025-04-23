@@ -34,6 +34,7 @@ class OrchestratorAgent extends Agent
             str_contains($messageLower, 'api') => (new DeveloperAgent('developer-agent'))->respond($message),
 
             str_contains($messageLower, 'business'),
+            str_contains($messageLower, 'plan'),
             str_contains($messageLower, 'strategy'),
             str_contains($messageLower, 'market') => (new BusinessAgent('business-agent'))->respond($message),
 
