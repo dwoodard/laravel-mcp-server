@@ -107,6 +107,7 @@ return [
         \App\MCP\Tools\MyCustomTool::class,
         \App\MCP\Tools\Storage\ReadFileStorageTool::class,
         \App\MCP\Tools\Storage\ListFileStorageTool::class,
+        \App\MCP\Tools\FileSystem\ListFilesTool::class,
     ],
 
     /*
