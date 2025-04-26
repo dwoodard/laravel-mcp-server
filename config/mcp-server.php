@@ -108,6 +108,7 @@ return [
         \App\MCP\Tools\Storage\ReadFileStorageTool::class,
         \App\MCP\Tools\Storage\ListFileStorageTool::class,
         \App\MCP\Tools\FileSystem\ListFilesTool::class,
+        \App\MCP\Tools\FileSystemTool::class,
     ],
 
     /*
